@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ASSIGNMENT ADVANCED</title>
+    <!-- You can include external CSS or use inline styles here if desired -->
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Car Website</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Car List</h2>
+        <ol type="I">
+            <li>Lambogini</li>
+            <li>G-Wagon</li>
+            <li>Maseratti</li>
+            <li>Tesla</li>
+            <li>BMW</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Our Beautiful Cars</h2>
+        <img src="https://images.pexels.com/photos/5058352/pexels-photo-5058352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="High End Car" height= 400 width="350">
+    </section>
+
+    <!-- Table of Contacts -->
+    <section>
+        <h2>Contact List</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Simeon Munyondi</td>
+                    <td>144, Karatina</td>
+                    <td>0796443845</td>
+                    <td>simeonmunyondi608@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Rigathi Gachagua</td>
+                    <td>001, Karatina</td>
+                    <td>0798765432</td>
+                    <td>gachagua@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Eric Wamumbi</td>
+                    <td>105, Karaina</td>
+                    <td>0112345678</td>
+                    <td>ewamumbi@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Alice Wahome</td>
+                    <td>1001, Nakuru</td>
+                    <td>0720242526</td>
+                    <td>alicew@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Chis Brown</td>
+                    <td>202 Birch Lane, NewYork</td>
+                    <td>555-8769</td>
+                    <td>chrisbrown@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="/submit" method="POST">
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+            <!-- Date Field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <!-- Dropdown Menu -->
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="kenya">KENYA</option>
+                <option value="uganda">UGANDA</option>
+                <option value="tanzania">TANZANIA</option>
+                <option value="rwanda">RWANDA</option>
+                <option value="burundi">BURUNDI</option>
+            </select><br><br>
+
+            <!-- Radio Buttons -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br><br>
+
+            <!-- Checkboxes -->
+            <label>Interests:</label><br>
+            <input type="checkbox" id="sport" name="interest" value="sport">
+            <label for="sports">Sport</label><br>
+            <input type="checkbox" id="suv" name="interests" value="suv">
+            <label for="music">SUV</label><br>
+            <input type="checkbox" id="sedan" name="interests" value="sedan">
+            <label for="movies">Sedan</label><br>
+            <input type="checkbox" id="jeep" name="interests" value="jeep">
+            <label for="movies">Jeep</label><br>
+            <input type="checkbox" id="coupe" name="interests" value="coupe">
+            <label for="movies">Coupe</label><br>
+            <!-- Submit Button -->
+            <input type="reset" value="RESET">
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+</body>
+
+</html>
